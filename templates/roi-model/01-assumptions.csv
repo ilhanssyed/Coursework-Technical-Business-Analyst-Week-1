@@ -1,6 +1,6 @@
 assumption_id,assumption_name,value,unit,source,confidence_level,notes
-A-01,agent_hourly_cost,,,TODO,TODO,Fill from finance assumptions sample or your own justified value
-A-02,straightforward_case_share,,,TODO,TODO,Record whether this is data-derived or estimated
-A-03,minutes_saved_per_case_balance_view,,,TODO,TODO,Use scenario-based assumptions
-A-04,minutes_saved_per_case_promise_capture,,,TODO,TODO,Use scenario-based assumptions
-A-05,recovery_uplift_percent_payment_plan,,,TODO,TODO,Keep this separate from time savings
+A-01,agent_hourly_cost,22,GBP,finance_assumptions.csv (FA-01),High,Blended agent hourly cost across the 50-agent floor
+A-02,straightforward_case_share,0.38,ratio,finance_assumptions.csv (FA-03),Medium,Data-derived operations estimate for self-service eligible pool
+A-03,minutes_saved_per_case_balance_view,8,minutes,Calculated (FA-04 minus FA-05),Medium,Current AHT of 18 mins down to 10 mins post-automation support
+A-04,minutes_saved_per_case_promise_capture,8,minutes,Calculated (FA-04 minus FA-05),Medium,Current AHT of 18 mins down to 10 mins post-automation support
+A-05,recovery_uplift_percent_payment_plan,0.04,ratio,finance_assumptions.csv (FA-07),Low,Strictly isolated recovery uplift rate for separate scenario analysis
